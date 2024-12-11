@@ -1,91 +1,89 @@
-TikTok-Automation-BOT
+# TikTok-Automation-BOT 🚀  
 
-Overview
+## Overview  
+**TikTok-Automation-BOT** is a Python-based script designed to streamline TikTok account management by automating:  
+- Login processes for multiple accounts.  
+- Profile data extraction (e.g., followers, coin balances).  
+- Managing successful and failed account logins.  
 
-TikTok-Automation-BOT is a Python script designed to automate TikTok account login, extract profile data (such as followers and coin balances), and handle multiple accounts. The bot uses Selenium for browser automation and integrates with a CAPTCHA-solving API for bypassing challenges.
+The bot leverages **Selenium** for browser automation and integrates with a CAPTCHA-solving API for bypassing challenges.
 
-Features
+---
 
-Automated TikTok login for multiple accounts.
+## Features 🌟  
+- **Automated TikTok login** for multiple accounts.  
+- **CAPTCHA-solving** integration using an external API.  
+- **Profile data extraction**: Followers count, coin balance, and username.  
+- **Error management**: Differentiates successful and failed logins for better oversight.  
 
-CAPTCHA-solving integration using an external API.
+---
 
-Extraction of profile data, including followers count and coin balance.
+## Prerequisites 🛠️  
 
-Management of successful and failed account logins.
+### Required Software  
+- **Python 3.x**: Version 3.8 or higher is recommended.  
+- **Google Chrome**: Required for browser automation.  
+- **ChromeDriver**: Ensure it matches your Chrome version. [Download ChromeDriver here](https://sites.google.com/chromium.org/driver/).  
 
-Prerequisites
+### Required Python Modules  
+Install all dependencies using pip:  
+```bash  
+pip install selenium undetected-chromedriver beautifulsoup4 phonenumbers colorama fake_useragent  
+```  
 
-Required Software
+---
 
-Python 3.x: Make sure you have Python 3.8 or higher installed.
+## Setup ⚙️  
 
-Google Chrome: The bot uses Chrome for automation.
+### 1. Prepare `data.txt`  
+Create a file named `data.txt` in the project directory with account details in the following format:  
+```  
++1234567890:password123  
+```  
+Each line represents an account with a phone number (or email) and password.
 
-ChromeDriver: Ensure ChromeDriver matches your Chrome version. You can download it from here: https://sites.google.com/chromium.org/driver/.
+### 2. CAPTCHA API Key  
+Replace the placeholder in the script with your CAPTCHA-solving API key:  
+```python  
+self.api_key = 'YOUR_CAPTCHA_API_KEY'  # Replace with your API key  
+```  
 
-Required Python Modules
+### 3. Configuration  
+Ensure ChromeDriver is in your system's `PATH` or provide its full path in the script.
 
-Install the required dependencies using pip:
-pip install required_module_name
-Modules included:
+---
 
-selenium
+## Usage 🚀  
 
-undetected-chromedriver
+Run the script using the following command:  
+```bash  
+python main.py  
+```  
 
-beautifulsoup4
+The bot will:  
+1. Read accounts from `data.txt`.  
+2. Log in to each account.  
+3. Extract profile data (username, followers, coins) for successful logins.  
+4. Save results to `result.txt` and log failed accounts in `corrupted_accounts.txt`.  
 
-phonenumbers
+---
 
-colorama
+## Files Created During Execution 📂  
+- **`result.txt`**: Stores data for successful logins.  
+- **`corrupted_accounts.txt`**: Logs credentials of accounts that failed to log in.  
 
-fake_useragent
+---
 
-Setup
+## Notes 📝  
+- Ensure `data.txt` contains valid credentials.  
+- Use a trusted CAPTCHA API service and safeguard your API key.  
+- This script is designed for **educational purposes only**. Misuse may violate TikTok's terms of service.  
 
-1. Prepare data.txt
+---
 
-Create a file named data.txt in the project directory. Add your accounts in the format:
-+1234567890:password123
-Each line represents an account with a phone number or email and password.
+## Disclaimer ⚠️  
+This tool is for **educational purposes only**. The author is not liable for misuse. Please adhere to TikTok's terms of service and applicable laws.
 
-2. CAPTCHA API Key
+---
 
-The script uses a CAPTCHA-solving API. Replace the placeholder in the script with your API key:
-self.api_key = 'YOUR_CAPTCHA_API_KEY'  # Replace with your API key
-3. Configuration
-
-Ensure ChromeDriver is in your PATH or provide the path in the script.
-
-Usage
-
-To run the script, use the following command:
-python main.py
-The bot will:
-
-Read accounts from data.txt.
-
-Attempt to log in to each account.
-
-Extract profile data (username, followers, coins) for successful logins.
-
-Save results to result.txt and failed logins to corrupted_accounts.txt.
-
-Files Created During Execution
-
-result.txt: Stores data for successful logins.
-
-corrupted_accounts.txt: Stores credentials of accounts that failed to log in.
-
-Notes
-
-Ensure data.txt contains valid credentials.
-
-Use a secure CAPTCHA API service and keep your API key private.
-
-The script is designed for educational purposes only. Unauthorized use of the bot may violate TikTok’s terms of service.
-
-Disclaimer
-
-This tool is provided for educational purposes only. The author is not responsible for any misuse of the script. Please use it responsibly and in compliance with applicable laws.
+How does this look? Let me know if you'd like further tweaks! 😊
