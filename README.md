@@ -85,5 +85,3 @@ The bot will:
 This tool is for **educational purposes only**. The author is not liable for misuse. Please adhere to TikTok's terms of service and applicable laws.
 
 ---
-
-How does this look? Let me know if you'd like further tweaks! 😊
