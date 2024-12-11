@@ -89,6 +89,3 @@ The script is designed for educational purposes only. Unauthorized use of the bo
 Disclaimer
 
 This tool is provided for educational purposes only. The author is not responsible for any misuse of the script. Please use it responsibly and in compliance with applicable laws.
-
-License
-This project is licensed under the MIT License. See the selected text, https://github.com/20AhmedRamadan04/TikTok-Automation-BOT/blob/main/LICENSE, file for details.
