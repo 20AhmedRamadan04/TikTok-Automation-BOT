@@ -42,7 +42,7 @@ class handle_files:
 class TikTok_BOT(handle_files):
     def __init__(self):
         super().__init__()
-        self.api_key = '790e7f933f1e6619ce5310b7fcbd6362'
+        self.api_key = 'YOUR_CAPTCHA_API_KEY'  # Replace with your API key
 
     def start(self):
         self.driver = self.setup_browser()
